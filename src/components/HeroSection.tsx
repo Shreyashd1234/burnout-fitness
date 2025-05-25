@@ -1,24 +1,7 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 const HeroSection = () => {
-  const dumbbellRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (dumbbellRef.current) {
-        const rect = dumbbellRef.current.getBoundingClientRect();
-        const x = (e.clientX - rect.left - rect.width / 2) / 10;
-        const y = (e.clientY - rect.top - rect.height / 2) / 10;
-        
-        dumbbellRef.current.style.transform = `translate(${x}px, ${y}px) rotateY(${x}deg) rotateX(${-y}deg)`;
-      }
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with parallax effect */}
@@ -43,11 +26,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
         {/* 3D Dumbbell Placeholder */}
         <div className="mb-12 flex justify-center">
-          <div
-            ref={dumbbellRef}
-            className="placeholder-3d w-32 h-32 md:w-48 md:h-48 animate-rotate-3d transition-transform duration-100 ease-out"
-            style={{ transformStyle: 'preserve-3d' }}
-          >
+          <div className="placeholder-3d w-32 h-32 md:w-48 md:h-48 animate-rotate-3d">
             <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow to-yellow-600 rounded-lg opacity-20 animate-glow"></div>
           </div>
         </div>
