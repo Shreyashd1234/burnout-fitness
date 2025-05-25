@@ -83,15 +83,9 @@ const BranchesSection = () => {
               key={index}
               className="branch-card stagger-item card-3d bg-burnout-black border border-burnout-gray-700 rounded-xl p-6 hover:border-burnout-yellow transition-all duration-300 group"
             >
-              {/* 3D Location Pin */}
-              <div className="placeholder-3d w-full h-32 mb-6 group-hover:animate-float">
-                <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 rounded-lg"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                  <div className="w-8 h-8 bg-burnout-yellow rounded-full mx-auto mb-2 flex items-center justify-center">
-                    <div className="w-3 h-3 bg-burnout-black rounded-full"></div>
-                  </div>
-                  <div className="text-burnout-yellow text-xs font-oswald opacity-70">3D LOCATION PIN</div>
-                </div>
+              {/* Branch Image Placeholder */}
+              <div className="w-full h-48 mb-6 bg-white rounded-lg flex items-center justify-center">
+                <span className="text-burnout-black text-sm font-oswald">BRANCH IMAGE</span>
               </div>
 
               {/* Branch Info */}
