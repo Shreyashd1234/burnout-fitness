@@ -7,33 +7,21 @@ const CustomerMomentsSection = () => {
   const moments = [
     {
       image: 'photo-1526374965328-7f61d4dc18c5',
-      title: 'Strength Training Session',
-      description: 'Members pushing their limits'
     },
     {
       image: 'photo-1500673922987-e212871fec22',
-      title: 'Group HIIT Class',
-      description: 'High energy team workout'
     },
     {
       image: 'photo-1501854140801-50d01698950b',
-      title: 'Personal Training',
-      description: 'One-on-one coaching'
     },
     {
       image: 'photo-1465146344425-f00d5f5c8f07',
-      title: 'Yoga & Flexibility',
-      description: 'Finding inner balance'
     },
     {
       image: 'photo-1582562124811-c09040d0a901',
-      title: 'Recovery Session',
-      description: 'Post-workout relaxation'
     },
     {
       image: 'photo-1526374965328-7f61d4dc18c5',
-      title: 'Team Challenge',
-      description: 'Community fitness event'
     }
   ];
 
@@ -81,22 +69,12 @@ const CustomerMomentsSection = () => {
               <div className="relative transform transition-all duration-300 hover:rotate-3d hover:scale-105 perspective-1000">
                 <div className="bg-burnout-gray-800 p-4 rounded-lg border-2 border-burnout-yellow/30 hover:border-burnout-yellow transition-all duration-300 transform hover:rotateX-2 hover:rotateY-2">
                   {/* Image Container */}
-                  <div className="aspect-square overflow-hidden rounded-lg bg-burnout-gray-700 mb-4">
+                  <div className="aspect-square overflow-hidden rounded-lg bg-burnout-gray-700">
                     <img
                       src={`https://images.unsplash.com/${moment.image}?w=400&h=400&fit=crop`}
-                      alt={moment.title}
+                      alt="Customer moment"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
-                  </div>
-
-                  {/* Content */}
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-oswald font-semibold text-burnout-yellow group-hover:text-yellow-400 transition-colors">
-                      {moment.title}
-                    </h3>
-                    <p className="text-burnout-gray-300 font-source text-sm">
-                      {moment.description}
-                    </p>
                   </div>
 
                   {/* 3D Frame Effect */}
