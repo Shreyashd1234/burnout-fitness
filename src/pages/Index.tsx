@@ -10,6 +10,7 @@ import BranchesSection from '../components/BranchesSection';
 import ContactSection from '../components/ContactSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import CustomerMomentsSection from '../components/CustomerMomentsSection';
+import GetInTouchSection from '../components/GetInTouchSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -56,6 +57,7 @@ const Index = () => {
       <ContactSection />
       <TestimonialsSection />
       <CustomerMomentsSection />
+      <GetInTouchSection />
       
       {/* Footer */}
       <Footer />
