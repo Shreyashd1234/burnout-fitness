@@ -12,7 +12,7 @@ const Navbar = () => {
     { id: 'pricing', label: 'Pricing' },
     { id: 'franchise', label: 'Get a Franchise' },
     { id: 'branches', label: 'Our Branches' },
-    { id: 'contact', label: 'Contact Us' }
+    { id: 'get-in-touch', label: 'Contact Us' }
   ];
 
   useEffect(() => {
