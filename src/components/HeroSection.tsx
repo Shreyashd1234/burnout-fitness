@@ -2,6 +2,14 @@
 import React from 'react';
 
 const HeroSection = () => {
+  const handleBookTrial = () => {
+    window.open('https://wa.me/918431157922', '_blank');
+  };
+
+  const handleExploreMemberships = () => {
+    document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with parallax effect */}
@@ -45,10 +53,10 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="btn-primary text-lg animate-glow">
+          <button onClick={handleBookTrial} className="btn-primary text-lg animate-glow">
             BOOK YOUR FREE TRIAL
           </button>
-          <button className="btn-secondary text-lg">
+          <button onClick={handleExploreMemberships} className="btn-secondary text-lg">
             EXPLORE MEMBERSHIPS
           </button>
         </div>

@@ -110,13 +110,10 @@ const BranchesSection = () => {
                 </div>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="mt-6 space-y-3">
+              {/* CTA Button */}
+              <div className="mt-6">
                 <button className="w-full bg-burnout-yellow text-burnout-black font-oswald font-semibold py-3 rounded-lg hover:bg-yellow-400 transition-colors">
-                  VISIT THIS BRANCH
-                </button>
-                <button className="w-full bg-transparent border border-burnout-yellow text-burnout-yellow font-oswald font-semibold py-3 rounded-lg hover:bg-burnout-yellow hover:text-burnout-black transition-all">
-                  GET DIRECTIONS
+                  GET LOCATION
                 </button>
               </div>
             </div>

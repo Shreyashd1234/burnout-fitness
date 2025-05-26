@@ -73,15 +73,28 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* 3D Trainer Placeholder */}
+          {/* Image Placeholder */}
           <div ref={trainerRef} className="section-reveal flex justify-center lg:justify-end">
-            <div className="placeholder-3d w-80 h-96 transform hover:scale-105 transition-transform duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/30 to-yellow-600/30 rounded-lg animate-glow"></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <div className="text-burnout-yellow text-sm font-oswald opacity-70">3D TRAINER MODEL</div>
-                <div className="text-burnout-yellow text-xs font-source opacity-50 mt-2">LIFTING WEIGHTS</div>
-              </div>
+            <div className="w-80 h-96 bg-white rounded-lg flex items-center justify-center border-2 border-burnout-yellow transform hover:scale-105 transition-transform duration-300">
+              <span className="text-burnout-black text-sm font-oswald">TRAINER IMAGE</span>
             </div>
+          </div>
+        </div>
+
+        {/* Promotional Video Section */}
+        <div className="mt-20 section-reveal">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-montserrat font-black text-burnout-white mb-4">
+              EXPERIENCE <span className="text-gradient">BURNOUT</span>
+            </h3>
+            <p className="text-lg text-burnout-gray-300 font-oswald">
+              Watch our gym introduction video
+            </p>
+          </div>
+          
+          {/* Video Placeholder */}
+          <div className="w-full h-64 md:h-96 bg-white rounded-lg flex items-center justify-center border-2 border-burnout-yellow">
+            <span className="text-burnout-black text-lg font-oswald">PROMOTIONAL VIDEO</span>
           </div>
         </div>
       </div>

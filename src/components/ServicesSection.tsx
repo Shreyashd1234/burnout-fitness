@@ -6,34 +6,28 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: 'Strength Training',
-      description: 'Build muscle and increase power with our state-of-the-art equipment',
-      icon3d: 'barbell'
+      title: 'Gym',
+      description: 'Complete strength training with state-of-the-art equipment'
     },
     {
-      title: 'HIIT Workouts',
-      description: 'High-intensity interval training for maximum fat burn',
-      icon3d: 'kettlebell'
+      title: 'Zumba',
+      description: 'High-energy dance fitness that makes working out fun'
     },
     {
-      title: 'Yoga & Flexibility',
-      description: 'Improve flexibility and find your inner balance',
-      icon3d: 'yoga-mat'
+      title: 'Yoga',
+      description: 'Improve flexibility and find your inner balance'
     },
     {
-      title: 'Personal Coaching',
-      description: 'One-on-one training tailored to your specific goals',
-      icon3d: 'dumbbell'
+      title: 'Dance',
+      description: 'Express yourself through movement and rhythm'
     },
     {
-      title: 'Group Classes',
-      description: 'Motivating group sessions with expert instructors',
-      icon3d: 'group-workout'
+      title: 'Aerobics',
+      description: 'Cardiovascular workouts to boost your endurance'
     },
     {
-      title: 'Cardio Training',
-      description: 'Boost your endurance with cutting-edge cardio equipment',
-      icon3d: 'treadmill'
+      title: 'Boxing',
+      description: 'Build strength, agility, and confidence through boxing'
     }
   ];
 
@@ -77,9 +71,9 @@ const ServicesSection = () => {
               key={index}
               className="service-card stagger-item card-3d bg-burnout-black border border-burnout-gray-700 rounded-xl p-6 hover:border-burnout-yellow transition-all duration-300 group"
             >
-              {/* 3D Icon Placeholder */}
-              <div className="placeholder-3d w-full h-40 mb-6 group-hover:animate-float">
-                <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 rounded-lg"></div>
+              {/* Service Image Placeholder */}
+              <div className="w-full h-40 mb-6 bg-white rounded-lg flex items-center justify-center">
+                <span className="text-burnout-black text-sm font-oswald">SERVICE IMAGE</span>
               </div>
 
               {/* Service Content */}
@@ -89,13 +83,6 @@ const ServicesSection = () => {
               <p className="text-burnout-gray-300 font-source leading-relaxed">
                 {service.description}
               </p>
-
-              {/* Hover Effect */}
-              <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="text-burnout-yellow font-oswald font-semibold hover:text-yellow-400 transition-colors">
-                  LEARN MORE →
-                </button>
-              </div>
             </div>
           ))}
         </div>
