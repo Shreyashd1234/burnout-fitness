@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import { useToast } from "@/hooks/use-toast";
 
 const GetInTouchSection = () => {
   const [formData, setFormData] = useState({
@@ -9,11 +10,50 @@ const GetInTouchSection = () => {
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+
+    try {
+      // Create email body with form data
+      const emailBody = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Message: ${formData.message}
+      `.trim();
+
+      // Create mailto link
+      const mailtoLink = `mailto:desaishreyash506@gmail.com?subject=Contact Form Submission from ${formData.name}&body=${encodeURIComponent(emailBody)}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+
+      toast({
+        title: "Form Submitted",
+        description: "Your default email client will open. Please send the email to complete your message submission.",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "There was an error submitting your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -23,15 +63,8 @@ const GetInTouchSection = () => {
     });
   };
 
-  const handleWhatsApp = () => {
-    const message = `Hi! I'm interested in joining Burnout Fitness Studio. My name is ${formData.name || '[Name]'} and I'd like to know more about your services.`;
-    const phoneNumber = '1234567890'; // Replace with actual WhatsApp number
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  };
-
   return (
-    <section id="get-in-touch" className="section-padding bg-burnout-black relative overflow-hidden">
+    <section id="contact-us" className="section-padding bg-burnout-black relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-burnout-black via-burnout-gray-900 to-burnout-black"></div>
       <div className="absolute inset-0 opacity-5">
@@ -59,7 +92,7 @@ const GetInTouchSection = () => {
               </div>
               <div>
                 <h3 className="font-oswald font-semibold text-burnout-white text-lg">CALL US</h3>
-                <p className="text-burnout-gray-300 font-source">(555) BURNOUT</p>
+                <p className="text-burnout-gray-300 font-source">8431157922</p>
               </div>
             </div>
 
@@ -69,7 +102,7 @@ const GetInTouchSection = () => {
               </div>
               <div>
                 <h3 className="font-oswald font-semibold text-burnout-white text-lg">EMAIL US</h3>
-                <p className="text-burnout-gray-300 font-source">info@burnoutfitness.com</p>
+                <p className="text-burnout-gray-300 font-source">desaishreyash506@gmail.com</p>
               </div>
             </div>
 
@@ -150,22 +183,13 @@ const GetInTouchSection = () => {
                 ></textarea>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button
-                  type="submit"
-                  className="flex-1 bg-burnout-yellow text-burnout-black font-oswald font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105"
-                >
-                  SEND MESSAGE
-                </button>
-                <button
-                  type="button"
-                  onClick={handleWhatsApp}
-                  className="flex-1 bg-green-600 text-white font-oswald font-bold py-3 px-8 rounded-lg hover:bg-green-500 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  WHATSAPP
-                </button>
-              </div>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-burnout-yellow text-burnout-black font-oswald font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              >
+                {isSubmitting ? 'SENDING...' : 'SEND MESSAGE'}
+              </button>
             </form>
           </div>
         </div>
