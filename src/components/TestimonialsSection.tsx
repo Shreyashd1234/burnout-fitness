@@ -60,18 +60,13 @@ const TestimonialsSection = () => {
     return () => observer.disconnect();
   }, []);
 
+  const openWhatsApp = () => {
+    const message = encodeURIComponent("Hi! I'm interested in learning more about Burnout Fitness Studio membership options.");
+    window.open(`https://wa.me/15558876688?text=${message}`, '_blank');
+  };
+
   return (
     <section className="section-padding bg-burnout-gray-900 relative overflow-hidden">
-      {/* Floating 3D Star */}
-      <div className="absolute top-10 right-10 animate-float">
-        <div className="placeholder-3d w-16 h-16">
-          <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/30 to-yellow-600/30 rounded-lg"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-burnout-yellow text-2xl">
-            ⭐
-          </div>
-        </div>
-      </div>
-
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div ref={sectionRef} className="text-center mb-16 section-reveal">

@@ -45,6 +45,11 @@ const CustomerMomentsSection = () => {
     return () => observer.disconnect();
   }, []);
 
+  const openWhatsApp = () => {
+    const message = encodeURIComponent("Hi! I'm ready to start my fitness journey with Burnout Fitness Studio. Can you help me get started?");
+    window.open(`https://wa.me/15558876688?text=${message}`, '_blank');
+  };
+
   return (
     <section className="section-padding bg-burnout-black">
       <div className="max-w-7xl mx-auto">
@@ -93,7 +98,10 @@ const CustomerMomentsSection = () => {
           <p className="text-burnout-gray-300 font-source text-lg mb-6">
             Ready to create your own transformation story?
           </p>
-          <button className="btn-primary text-lg">
+          <button 
+            onClick={openWhatsApp}
+            className="btn-primary text-lg"
+          >
             START YOUR JOURNEY TODAY
           </button>
         </div>

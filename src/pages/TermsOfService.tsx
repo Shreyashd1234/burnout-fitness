@@ -8,7 +8,7 @@ const TermsOfService = () => {
     <div className="min-h-screen bg-burnout-black text-burnout-white">
       <Navbar />
       
-      <div className="section-padding">
+      <div className="section-padding pt-32">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-montserrat font-black text-burnout-white mb-8">
             TERMS OF <span className="text-gradient">SERVICE</span>

@@ -1,9 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navLinks = [
     { id: 'home', label: 'Home' },
@@ -19,27 +22,42 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      // Update active section based on scroll position
-      const sections = navLinks.map(link => document.getElementById(link.id));
-      const scrollPosition = window.scrollY + 100;
+      // Only update active section on home page
+      if (location.pathname === '/') {
+        const sections = navLinks.map(link => document.getElementById(link.id));
+        const scrollPosition = window.scrollY + 100;
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(navLinks[i].id);
-          break;
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const section = sections[i];
+          if (section && section.offsetTop <= scrollPosition) {
+            setActiveSection(navLinks[i].id);
+            break;
+          }
         }
       }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    // If not on home page, navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Already on home page, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -51,9 +69,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-montserrat font-black text-burnout-yellow">
+            <button 
+              onClick={() => navigate('/')}
+              className="text-2xl font-montserrat font-black text-burnout-yellow hover:text-yellow-400 transition-colors"
+            >
               BURNOUT
-            </h1>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -64,7 +85,7 @@ const Navbar = () => {
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
                   className={`navbar-link text-sm font-oswald font-medium px-3 py-2 transition-colors duration-300 ${
-                    activeSection === link.id
+                    activeSection === link.id && location.pathname === '/'
                       ? 'text-burnout-yellow active'
                       : 'text-burnout-white hover:text-burnout-yellow'
                   }`}

@@ -66,6 +66,11 @@ const PricingSection = () => {
     return () => observer.disconnect();
   }, []);
 
+  const openWhatsApp = (planName: string) => {
+    const message = encodeURIComponent(`Hi! I'm interested in the ${planName} membership plan. Can you provide more details?`);
+    window.open(`https://wa.me/15558876688?text=${message}`, '_blank');
+  };
+
   return (
     <section id="pricing" className="section-padding bg-burnout-gray-900">
       <div className="max-w-7xl mx-auto">
@@ -131,11 +136,14 @@ const PricingSection = () => {
               </ul>
 
               {/* CTA Button */}
-              <button className={`w-full py-4 rounded-lg font-oswald font-semibold transition-all duration-300 ${
-                plan.popular
-                  ? 'bg-burnout-yellow text-burnout-black hover:bg-yellow-400 hover:scale-105'
-                  : 'bg-transparent border-2 border-burnout-yellow text-burnout-yellow hover:bg-burnout-yellow hover:text-burnout-black'
-              }`}>
+              <button 
+                onClick={() => openWhatsApp(plan.name)}
+                className={`w-full py-4 rounded-lg font-oswald font-semibold transition-all duration-300 ${
+                  plan.popular
+                    ? 'bg-burnout-yellow text-burnout-black hover:bg-yellow-400 hover:scale-105'
+                    : 'bg-transparent border-2 border-burnout-yellow text-burnout-yellow hover:bg-burnout-yellow hover:text-burnout-black'
+                }`}
+              >
                 GET STARTED
               </button>
             </div>
