@@ -1,8 +1,32 @@
 
 import React from 'react';
 import { Instagram } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (sectionId: string) => {
+    // If not on home page, navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Already on home page, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="bg-burnout-black border-t border-burnout-gray-800">
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -42,11 +66,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-oswald font-semibold text-burnout-white mb-4">QUICK LINKS</h4>
             <ul className="space-y-3 text-burnout-gray-300 font-source">
-              <li><a href="#home" className="hover:text-burnout-yellow transition-colors">Home</a></li>
-              <li><a href="#services" className="hover:text-burnout-yellow transition-colors">Services</a></li>
-              <li><a href="#about" className="hover:text-burnout-yellow transition-colors">About Us</a></li>
-              <li><a href="#pricing" className="hover:text-burnout-yellow transition-colors">Pricing</a></li>
-              <li><a href="#branches" className="hover:text-burnout-yellow transition-colors">Our Branches</a></li>
+              <li><button onClick={() => scrollToSection('home')} className="hover:text-burnout-yellow transition-colors text-left">Home</button></li>
+              <li><button onClick={() => scrollToSection('services')} className="hover:text-burnout-yellow transition-colors text-left">Services</button></li>
+              <li><button onClick={() => scrollToSection('about')} className="hover:text-burnout-yellow transition-colors text-left">About Us</button></li>
+              <li><button onClick={() => scrollToSection('pricing')} className="hover:text-burnout-yellow transition-colors text-left">Pricing</button></li>
+              <li><button onClick={() => scrollToSection('branches')} className="hover:text-burnout-yellow transition-colors text-left">Our Branches</button></li>
             </ul>
           </div>
 
