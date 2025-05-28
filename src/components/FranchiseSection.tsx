@@ -1,8 +1,14 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const FranchiseSection = () => {
   const mapRef = useRef<HTMLDivElement>(null);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: ''
+  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -20,6 +26,33 @@ const FranchiseSection = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Create organized WhatsApp message for franchise inquiry
+    const message = `Hello! I'm interested in franchise opportunities.
+
+First Name: ${formData.firstName}
+Last Name: ${formData.lastName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+Please provide me with detailed franchise information including investment requirements, territories available, and support provided.
+
+Thank you!`;
+
+    const phoneNumber = '918431157922';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
 
   return (
     <section id="franchise" className="section-padding bg-burnout-black relative overflow-hidden">
@@ -78,28 +111,44 @@ const FranchiseSection = () => {
               <h3 className="text-2xl font-oswald font-semibold text-burnout-yellow mb-4">
                 Request Franchise Information
               </h3>
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input
                     type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
                     placeholder="First Name"
                     className="bg-burnout-black border border-burnout-gray-600 rounded-lg px-4 py-3 text-burnout-white placeholder-burnout-gray-400 focus:border-burnout-yellow focus:outline-none"
+                    required
                   />
                   <input
                     type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
                     placeholder="Last Name"
                     className="bg-burnout-black border border-burnout-gray-600 rounded-lg px-4 py-3 text-burnout-white placeholder-burnout-gray-400 focus:border-burnout-yellow focus:outline-none"
+                    required
                   />
                 </div>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Email Address"
                   className="w-full bg-burnout-black border border-burnout-gray-600 rounded-lg px-4 py-3 text-burnout-white placeholder-burnout-gray-400 focus:border-burnout-yellow focus:outline-none"
+                  required
                 />
                 <input
                   type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Phone Number"
                   className="w-full bg-burnout-black border border-burnout-gray-600 rounded-lg px-4 py-3 text-burnout-white placeholder-burnout-gray-400 focus:border-burnout-yellow focus:outline-none"
+                  required
                 />
                 <button type="submit" className="btn-primary w-full">
                   REQUEST INFORMATION

@@ -68,7 +68,7 @@ const PricingSection = () => {
 
   const openWhatsApp = (planName: string) => {
     const message = encodeURIComponent(`Hi! I'm interested in the ${planName} membership plan. Can you provide more details?`);
-    window.open(`https://wa.me/15558876688?text=${message}`, '_blank');
+    window.open(`https://wa.me/918431157922?text=${message}`, '_blank');
   };
 
   return (
@@ -103,14 +103,6 @@ const PricingSection = () => {
                   </span>
                 </div>
               )}
-
-              {/* 3D Price Tag Placeholder */}
-              <div className="placeholder-3d w-full h-24 mb-6 hover:animate-float">
-                <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 rounded-lg"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                  <div className="text-burnout-yellow text-xs font-oswald opacity-70">3D PRICE TAG</div>
-                </div>
-              </div>
 
               {/* Plan Details */}
               <div className="text-center mb-8">
