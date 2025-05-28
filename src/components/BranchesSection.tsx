@@ -4,6 +4,26 @@ import React, { useEffect, useRef } from 'react';
 const BranchesSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
+  // ===============================================
+  // HOW TO ADD A NEW BRANCH BOX:
+  // ===============================================
+  // 1. Copy the branch object template below
+  // 2. Paste it into the branches array
+  // 3. Update the following fields:
+  //    - name: Your branch name (e.g., 'New Location')
+  //    - address: Full address of the branch
+  //    - phone: Contact phone number
+  //    - hours: Operating hours
+  // 
+  // TEMPLATE TO COPY:
+  // {
+  //   name: 'Your Branch Name',
+  //   address: 'Your Full Address Here',
+  //   phone: '(555) XXX-XXXX',
+  //   hours: 'Mon-Fri: 5AM-11PM, Sat-Sun: 6AM-10PM'
+  // },
+  // ===============================================
+
   const branches = [
     {
       name: 'Downtown Central',
@@ -41,6 +61,7 @@ const BranchesSection = () => {
       phone: '(555) 678-9012',
       hours: 'Mon-Fri: 5AM-11PM, Sat-Sun: 6AM-10PM'
     }
+    // ADD NEW BRANCHES HERE - Just copy the template above and modify the details
   ];
 
   useEffect(() => {
