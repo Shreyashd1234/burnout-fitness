@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const PricingSection = () => {
@@ -7,7 +6,7 @@ const PricingSection = () => {
   const pricingPlans = [
     {
       name: 'BASIC',
-      price: 29,
+      price: 8000,
       period: 'month',
       features: [
         'Access to gym equipment',
@@ -19,7 +18,7 @@ const PricingSection = () => {
     },
     {
       name: 'PRO',
-      price: 59,
+      price: 10000,
       period: 'month',
       features: [
         'Everything in Basic',
@@ -32,7 +31,7 @@ const PricingSection = () => {
     },
     {
       name: 'ELITE',
-      price: 99,
+      price: 12000,
       period: 'month',
       features: [
         'Everything in Pro',
@@ -80,7 +79,7 @@ const PricingSection = () => {
             MEMBERSHIP <span className="text-gradient">PRICING</span>
           </h2>
           <p className="text-xl text-burnout-gray-300 font-oswald max-w-3xl mx-auto">
-            Choose the perfect plan to fuel your fitness journey
+            Affordable, all-inclusive plans designed for the needs of a modern Indian gym-goer in a tier 2 city. Enjoy world-class equipment, group classes, personal training, and more—without breaking the bank.
           </p>
         </div>
 
@@ -110,7 +109,7 @@ const PricingSection = () => {
                   {plan.name}
                 </h3>
                 <div className="text-4xl font-montserrat font-black text-burnout-white mb-1">
-                  ${plan.price}
+                  ₹{plan.price}
                 </div>
                 <div className="text-burnout-gray-400 font-source">
                   per {plan.period}

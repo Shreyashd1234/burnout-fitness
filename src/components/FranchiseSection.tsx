@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 
 const FranchiseSection = () => {
@@ -90,7 +89,7 @@ Thank you!`;
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
                 <div className="text-burnout-yellow font-oswald font-semibold">INVESTMENT</div>
-                <div className="text-burnout-gray-300 font-source">$150K - $300K</div>
+                <div className="text-burnout-gray-300 font-source">₹150K - ₹300K</div>
               </div>
               <div className="space-y-2">
                 <div className="text-burnout-yellow font-oswald font-semibold">ROI TIMELINE</div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Instagram } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -67,8 +66,8 @@ const Footer = () => {
             <h4 className="text-lg font-oswald font-semibold text-burnout-white mb-4">QUICK LINKS</h4>
             <ul className="space-y-3 text-burnout-gray-300 font-source">
               <li><button onClick={() => scrollToSection('home')} className="hover:text-burnout-yellow transition-colors text-left">Home</button></li>
-              <li><button onClick={() => scrollToSection('services')} className="hover:text-burnout-yellow transition-colors text-left">Services</button></li>
               <li><button onClick={() => scrollToSection('about')} className="hover:text-burnout-yellow transition-colors text-left">About Us</button></li>
+              <li><button onClick={() => scrollToSection('services')} className="hover:text-burnout-yellow transition-colors text-left">Services</button></li>
               <li><button onClick={() => scrollToSection('pricing')} className="hover:text-burnout-yellow transition-colors text-left">Pricing</button></li>
               <li><button onClick={() => scrollToSection('branches')} className="hover:text-burnout-yellow transition-colors text-left">Our Branches</button></li>
             </ul>
@@ -89,7 +88,7 @@ const Footer = () => {
         <div className="border-t border-burnout-gray-800 mt-12 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-burnout-gray-400 font-source text-sm">
-              © 2024 Burnout Fitness Studio. All rights reserved.
+              © 2025 Burnout Fitness Studio. All rights reserved. Developed by Next Media Co
             </p>
             <div className="flex space-x-6 text-burnout-gray-400 font-source text-sm">
               <a href="/privacy-policy" className="hover:text-burnout-yellow transition-colors">Privacy Policy</a>

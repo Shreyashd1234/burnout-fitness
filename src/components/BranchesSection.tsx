@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const BranchesSection = () => {
@@ -26,42 +25,65 @@ const BranchesSection = () => {
 
   const branches = [
     {
-      name: 'Downtown Central',
-      address: '123 Main Street, Downtown',
-      phone: '(555) 123-4567',
-      hours: 'Mon-Fri: 5AM-11PM, Sat-Sun: 6AM-10PM'
+      name: 'Munnekolala',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
     },
     {
-      name: 'Westside Plaza',
-      address: '456 West Avenue, Westside',
-      phone: '(555) 234-5678',
-      hours: 'Mon-Fri: 5AM-11PM, Sat-Sun: 6AM-10PM'
+      name: 'AECS Layout',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
     },
     {
-      name: 'North Hills',
-      address: '789 North Road, Hills District',
-      phone: '(555) 345-6789',
-      hours: 'Mon-Fri: 5AM-11PM, Sat-Sun: 6AM-10PM'
+      name: 'BEML',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
     },
     {
-      name: 'Eastgate Center',
-      address: '321 East Boulevard, Eastgate',
-      phone: '(555) 456-7890',
-      hours: 'Mon-Fri: 5AM-11PM, Sat-Sun: 6AM-10PM'
+      name: 'Marathahalli Bridge',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
     },
     {
-      name: 'Southpark Mall',
-      address: '654 South Park Drive, Southpark',
-      phone: '(555) 567-8901',
-      hours: 'Mon-Fri: 5AM-11PM, Sat-Sun: 6AM-10PM'
+      name: 'Nitrogen SGR Dental College Road',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
     },
     {
-      name: 'Riverside District',
-      address: '987 River Road, Riverside',
-      phone: '(555) 678-9012',
-      hours: 'Mon-Fri: 5AM-11PM, Sat-Sun: 6AM-10PM'
+      name: 'Doddakannelli',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
+    },
+    {
+      name: 'Kadugodi',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
+    },
+    {
+      name: 'Pai Layout',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
+    },
+    {
+      name: 'Electronic City',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
+    },
+    {
+      name: 'Belgaum',
+      address: 'Branch address here',
+      phone: 'Phone number here',
+      hours: 'Hours here'
     }
-    // ADD NEW BRANCHES HERE - Just copy the template above and modify the details
   ];
 
   useEffect(() => {

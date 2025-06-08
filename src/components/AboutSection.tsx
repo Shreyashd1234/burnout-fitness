@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const AboutSection = () => {
@@ -30,45 +29,42 @@ const AboutSection = () => {
           {/* Text Content */}
           <div ref={textRef} className="section-reveal space-y-6">
             <h2 className="text-4xl md:text-6xl font-montserrat font-black text-burnout-white leading-tight">
-              ABOUT <span className="text-gradient">BURNOUT</span>
+              WHO <span className="text-gradient">WE ARE</span>
             </h2>
             
             <p className="text-xl text-burnout-gray-300 font-oswald leading-relaxed">
               WE BELIEVE FITNESS IS NOT JUST A ROUTINE – IT'S A LIFESTYLE TRANSFORMATION
             </p>
             
-            <div className="space-y-4 text-burnout-gray-200 font-source text-lg leading-relaxed">
+            {/* Mission & Vision (now horizontal blocks) */}
+            <div className="space-y-6">
+              <div>
+                <div className="text-burnout-yellow font-oswald font-semibold text-2xl mb-2">OUR MISSION</div>
+                <p className="text-burnout-gray-200 font-source text-lg leading-relaxed">
+                  To empower individuals through fitness, creating a community where everyone can achieve their health and wellness goals. We strive to provide accessible, high-quality fitness solutions that transform lives and build lasting healthy habits.
+                </p>
+              </div>
+              <div>
+                <div className="text-burnout-yellow font-oswald font-semibold text-2xl mb-2">OUR VISION</div>
+                <p className="text-burnout-gray-200 font-source text-lg leading-relaxed">
+                  To be the leading fitness destination in India, known for our innovative approach to wellness, exceptional training programs, and commitment to member success. We envision a future where fitness is accessible to all, creating healthier communities nationwide.
+                </p>
+              </div>
+            </div>
+
+            {/* About Story (moved below mission/vision) */}
+            <div className="space-y-4 text-burnout-gray-200 font-source text-lg leading-relaxed pt-4">
               <p>
                 Founded in 2018, Burnout Fitness Studio has been dedicated to creating an environment 
                 where fitness enthusiasts of all levels can push their limits and achieve extraordinary results.
               </p>
-              
-              <p>
-                Our team of certified trainers brings over 50 years of combined experience, ensuring 
-                you receive expert guidance on your fitness journey. We combine cutting-edge equipment 
-                with proven training methodologies to deliver results that exceed expectations.
-              </p>
-              
-              <p>
-                From beginners taking their first steps to seasoned athletes pushing new boundaries, 
-                we provide personalized attention and unwavering support to help you burnout your limits 
-                and ignite your potential.
-              </p>
             </div>
 
             {/* Statistics */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
+            <div className="grid grid-cols-1 gap-6 pt-12">
               <div className="text-center">
-                <div className="text-3xl font-montserrat font-black text-burnout-yellow">500+</div>
-                <div className="text-sm font-oswald text-burnout-gray-400">MEMBERS</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-montserrat font-black text-burnout-yellow">15+</div>
-                <div className="text-sm font-oswald text-burnout-gray-400">TRAINERS</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-montserrat font-black text-burnout-yellow">5</div>
-                <div className="text-sm font-oswald text-burnout-gray-400">YEARS</div>
+                <div className="text-6xl md:text-7xl font-montserrat font-extrabold text-burnout-yellow mb-2">15+</div>
+                <div className="text-xl md:text-2xl font-oswald font-bold text-burnout-gray-200 tracking-wide">BRANCHES</div>
               </div>
             </div>
           </div>

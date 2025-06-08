@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import AboutSection from '../components/AboutSection';
+import WhyChooseUsSection from '../components/WhyChooseUsSection';
 import PricingSection from '../components/PricingSection';
 import FranchiseSection from '../components/FranchiseSection';
 import BranchesSection from '../components/BranchesSection';
@@ -48,8 +49,9 @@ const Index = () => {
       
       {/* Page Sections */}
       <HeroSection />
-      <ServicesSection />
       <AboutSection />
+      <WhyChooseUsSection />
+      <ServicesSection />
       <PricingSection />
       <FranchiseSection />
       <BranchesSection />

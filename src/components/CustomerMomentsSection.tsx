@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const CustomerMomentsSection = () => {
@@ -74,12 +73,8 @@ const CustomerMomentsSection = () => {
               <div className="relative transform transition-all duration-300 hover:rotate-3d hover:scale-105 perspective-1000">
                 <div className="bg-burnout-gray-800 p-4 rounded-lg border-2 border-burnout-yellow/30 hover:border-burnout-yellow transition-all duration-300 transform hover:rotateX-2 hover:rotateY-2">
                   {/* Image Container */}
-                  <div className="aspect-square overflow-hidden rounded-lg bg-burnout-gray-700">
-                    <img
-                      src={`https://images.unsplash.com/${moment.image}?w=400&h=400&fit=crop`}
-                      alt="Customer moment"
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
+                  <div className="aspect-square overflow-hidden rounded-lg bg-white flex items-center justify-center">
+                    <span className="text-burnout-black text-lg font-oswald">Moments images</span>
                   </div>
 
                   {/* 3D Frame Effect */}

@@ -1,5 +1,13 @@
+import React, { Suspense } from 'react';
+import { Canvas, useLoader } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+// @ts-ignore
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 
-import React from 'react';
+function DumbbellModel() {
+  const obj = useLoader(OBJLoader, '/dumbbell.obj');
+  return <primitive object={obj} scale={2} />;
+}
 
 const HeroSection = () => {
   const handleBookTrial = () => {
@@ -32,10 +40,17 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
-        {/* 3D Dumbbell Placeholder */}
+        {/* 3D Dumbbell Model */}
         <div className="mb-12 flex justify-center">
-          <div className="placeholder-3d w-32 h-32 md:w-48 md:h-48 animate-rotate-3d">
-            <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow to-yellow-600 rounded-lg opacity-20 animate-glow"></div>
+          <div className="w-32 h-32 md:w-48 md:h-48">
+            <Canvas camera={{ position: [0, 0, 5] }}>
+              <ambientLight intensity={0.7} />
+              <directionalLight position={[5, 5, 5]} />
+              <Suspense fallback={null}>
+                <DumbbellModel />
+                <OrbitControls enableZoom={false} />
+              </Suspense>
+            </Canvas>
           </div>
         </div>
 
@@ -52,7 +67,7 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <button onClick={handleBookTrial} className="btn-primary text-lg animate-glow">
             BOOK YOUR FREE TRIAL
           </button>
@@ -62,8 +77,8 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-burnout-yellow rounded-full flex justify-center">
+        <div className="flex justify-center items-center">
+          <div className="w-6 h-10 border-2 border-burnout-yellow rounded-full flex justify-center animate-bounce">
             <div className="w-1 h-3 bg-burnout-yellow rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
