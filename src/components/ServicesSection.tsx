@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const ServicesSection = () => {
@@ -28,6 +27,10 @@ const ServicesSection = () => {
     {
       title: 'Boxing',
       description: 'Build strength, agility, and confidence through boxing'
+    },
+    {
+      title: 'Pilates',
+      description: 'Enhance core strength, flexibility, and posture with expert-led Pilates sessions'
     }
   ];
 

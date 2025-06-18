@@ -89,19 +89,21 @@ Thank you!`;
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
                 <div className="text-burnout-yellow font-oswald font-semibold">INVESTMENT</div>
-                <div className="text-burnout-gray-300 font-source">₹150K - ₹300K</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-burnout-yellow font-oswald font-semibold">ROI TIMELINE</div>
-                <div className="text-burnout-gray-300 font-source">12-18 Months</div>
+                <div className="text-burnout-gray-300 font-source">₹30 Lakhs - ₹50 Lakhs</div>
               </div>
               <div className="space-y-2">
                 <div className="text-burnout-yellow font-oswald font-semibold">TERRITORIES</div>
-                <div className="text-burnout-gray-300 font-source">50+ Available</div>
+                <div className="text-burnout-gray-300 font-source">Anywhere in India</div>
               </div>
-              <div className="space-y-2">
+              <div className="col-span-2 flex flex-col space-y-2 mt-2">
                 <div className="text-burnout-yellow font-oswald font-semibold">SUPPORT</div>
-                <div className="text-burnout-gray-300 font-source">24/7 Available</div>
+                <ul className="text-burnout-gray-300 font-source list-disc list-inside space-y-1">
+                  <li>Imports Equipment</li>
+                  <li>Software Support</li>
+                  <li>Trainers Support</li>
+                  <li>Full Guide (How to run Gym)</li>
+                  <li>Interiors Award Support</li>
+                </ul>
               </div>
             </div>
 
