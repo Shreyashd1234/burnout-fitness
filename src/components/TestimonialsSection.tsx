@@ -1,5 +1,8 @@
-
 import React, { useState, useEffect, useRef } from 'react';
+import review1 from '../assets/review1.jpg';
+import review2 from '../assets/review2.jpg';
+import review3 from '../assets/review3.jpg';
+import review4 from '../assets/review4.jpg';
 
 const TestimonialsSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -8,28 +11,28 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'Marketing Director',
-      image: 'photo-1582562124811-c09040d0a901',
-      quote: 'Burnout Fitness completely transformed my life. The trainers are incredible and the community is so supportive. I\'ve never felt stronger!'
+      name: 'Satyaban Mahakhud',
+      role: '',
+      image: review1,
+      quote: "It's been an excellent experience, especially considering how budget-friendly it is. The gym is clean and equipped with everything you need for a great workout...💪😊\nIf you're looking for an affordable gym, I highly recommend Burnout Fitness. You get great value for your money!"
     },
     {
-      name: 'Mike Rodriguez',
-      role: 'Software Engineer',
-      image: 'photo-1500673922987-e212871fec22',
-      quote: 'The HIIT classes at Burnout are intense but amazing. I\'ve lost 30 pounds and gained so much confidence. This place is addictive in the best way!'
+      name: 'bhagyashree bhatkande',
+      role: '',
+      image: review2,
+      quote: "This gym is a fantastic find - the equipment is top-notch, well-maintained, and offers a great variety for all fitness levels. The staff are incredibly friendly and knowledgeable, always ready to assist with form and provide personalized workout plans. The atmosphere is positive and supportive, making it a welcoming place for both beginners and experienced athletes. I especially appreciate the clean facilities, diverse class options, and the community feel - it's not just a gym, it's a place where you feel motivated to reach your fitness goals."
     },
     {
-      name: 'Emily Chen',
-      role: 'Business Owner',
-      image: 'photo-1526374965328-7f61d4dc18c5',
-      quote: 'As a busy entrepreneur, I need workouts that are efficient and effective. Burnout delivers exactly that. The personal training is top-notch!'
+      name: 'Hemanth Kumar A',
+      role: '',
+      image: review3,
+      quote: "Good gym nyc experience coaches motivate us to do workout."
     },
     {
-      name: 'David Thompson',
-      role: 'Teacher',
-      image: 'photo-1501854140801-50d01698950b',
-      quote: 'I was intimidated by gyms before, but Burnout made me feel welcome from day one. The progress I\'ve made here is beyond my wildest dreams!'
+      name: 'Arghya Chakraborty',
+      role: '',
+      image: review4,
+      quote: "I've been training at Burnout Fitness Gym for a few months now, and I can confidently say it's been a game-changer for my fitness journey! The gym itself is well-equipped, clean, and has a great atmosphere."
     }
   ];
 
@@ -98,7 +101,7 @@ const TestimonialsSection = () => {
             <div className="flex items-center justify-center space-x-4">
               <div className="w-16 h-16 rounded-full bg-burnout-gray-700 overflow-hidden">
                 <img
-                  src={`https://images.unsplash.com/${testimonials[currentTestimonial].image}?w=64&h=64&fit=crop&crop=face`}
+                  src={testimonials[currentTestimonial].image}
                   alt={testimonials[currentTestimonial].name}
                   className="w-full h-full object-cover"
                 />

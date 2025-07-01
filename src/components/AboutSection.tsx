@@ -72,11 +72,11 @@ const AboutSection = () => {
               </div>
               <div className="flex flex-col items-center justify-center h-full bg-burnout-gray-900 rounded-xl p-6 shadow-md">
                 <span className="text-burnout-yellow text-2xl mb-1">💪</span>
-                <div className="text-lg md:text-xl font-oswald font-bold text-burnout-gray-200 tracking-wide leading-tight">Natural Transformation Only</div>
+                <div className="text-base md:text-lg font-oswald font-bold text-burnout-gray-200 tracking-wide leading-tight">Natural Transformation Only</div>
               </div>
               <div className="flex flex-col items-center justify-center h-full bg-burnout-gray-900 rounded-xl p-6 shadow-md">
                 <span className="text-burnout-yellow text-2xl mb-1">🚚</span>
-                <div className="text-lg md:text-xl font-oswald font-bold text-burnout-gray-200 tracking-wide leading-tight">Distribution of <span className="text-burnout-yellow">MBH</span> gym equipments in India</div>
+                <div className="text-base md:text-lg font-oswald font-bold text-burnout-gray-200 tracking-wide leading-tight">Distribution of <span className="text-burnout-yellow">MBH</span> gym equipments in India</div>
               </div>
             </div>
           </div>
