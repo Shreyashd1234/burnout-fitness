@@ -1,4 +1,11 @@
 import React, { useEffect, useRef } from 'react';
+import gymImg from '../assets/gym.jpg';
+import zumbaImg from '../assets/zumba.jpg';
+import yogaImg from '../assets/yoga.jpg';
+import danceImg from '../assets/dance.jpg';
+import aerobicsImg from '../assets/aerobics.jpg';
+import boxingImg from '../assets/boxing.jpg';
+import pilatesImg from '../assets/pilates.jpg';
 
 const ServicesSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -6,31 +13,38 @@ const ServicesSection = () => {
   const services = [
     {
       title: 'Gym',
-      description: 'Complete strength training with state-of-the-art equipment'
+      description: 'Complete strength training with state-of-the-art equipment',
+      image: gymImg
     },
     {
       title: 'Zumba',
-      description: 'High-energy dance fitness that makes working out fun'
+      description: 'High-energy dance fitness that makes working out fun',
+      image: zumbaImg
     },
     {
       title: 'Yoga',
-      description: 'Improve flexibility and find your inner balance'
+      description: 'Improve flexibility and find your inner balance',
+      image: yogaImg
     },
     {
       title: 'Dance',
-      description: 'Express yourself through movement and rhythm'
+      description: 'Express yourself through movement and rhythm',
+      image: danceImg
     },
     {
       title: 'Aerobics',
-      description: 'Cardiovascular workouts to boost your endurance'
+      description: 'Cardiovascular workouts to boost your endurance',
+      image: aerobicsImg
     },
     {
       title: 'Boxing',
-      description: 'Build strength, agility, and confidence through boxing'
+      description: 'Build strength, agility, and confidence through boxing',
+      image: boxingImg
     },
     {
       title: 'Pilates',
-      description: 'Enhance core strength, flexibility, and posture with expert-led Pilates sessions'
+      description: 'Enhance core strength, flexibility, and posture with expert-led Pilates sessions',
+      image: pilatesImg
     }
   ];
 
@@ -75,8 +89,12 @@ const ServicesSection = () => {
               className="service-card stagger-item card-3d bg-burnout-black border border-burnout-gray-700 rounded-xl p-6 hover:border-burnout-yellow transition-all duration-300 group"
             >
               {/* Service Image Placeholder */}
-              <div className="w-full h-40 mb-6 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-burnout-black text-sm font-oswald">SERVICE IMAGE</span>
+              <div className="w-full h-40 mb-6 rounded-xl flex items-center justify-center overflow-hidden border-2 border-burnout-yellow shadow-lg bg-gradient-to-br from-burnout-gray-900 via-burnout-gray-800 to-burnout-black">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="object-cover w-full h-full"
+                />
               </div>
 
               {/* Service Content */}
