@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import burnoutMap from '../assets/burnout map.png';
+import burnoutMap from '../assets/burnout-map.png';
 
 const FranchiseSection = () => {
   const mapRef = useRef<HTMLDivElement>(null);
