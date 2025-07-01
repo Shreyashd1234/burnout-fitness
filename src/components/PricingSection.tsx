@@ -83,7 +83,7 @@ const PricingSection = () => {
             MEMBERSHIP <span className="text-gradient">PRICING</span>
           </h2>
           <p className="text-xl text-burnout-gray-300 font-oswald max-w-3xl mx-auto">
-            Affordable, all-inclusive plans designed for the needs of a modern Indian gym-goer in a tier 2 city. Enjoy world-class equipment, group classes, personal training, and more—without breaking the bank.
+            Unlock access to world-class fitness, luxury amenities, and expert coaching—crafted for those who demand the best. Experience transformative results in an environment designed for excellence, community, and your personal growth.
           </p>
         </div>
 
@@ -96,7 +96,7 @@ const PricingSection = () => {
 
         {/* Tariff Plan Gym */}
         <div className="mb-16 section-reveal stagger-item">
-          <div className="bg-burnout-black border border-burnout-gray-700 rounded-2xl shadow-lg p-8 md:p-12 relative card-3d hover:border-burnout-yellow transition-all">
+          <div className="bg-burnout-black border border-burnout-gray-700 rounded-2xl shadow-lg p-8 md:p-12 relative hover:border-burnout-yellow hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 pricing-card">
             <h3 className="text-2xl font-oswald font-bold text-burnout-yellow mb-6 text-center flex items-center justify-center gap-2">
               TARIFF PLAN GYM
               <span className="bg-burnout-yellow text-burnout-black font-oswald font-semibold px-4 py-1 rounded-full text-xs ml-2 animate-pulse">MOST POPULAR</span>
@@ -140,7 +140,7 @@ const PricingSection = () => {
 
         {/* Tariff Personal Training */}
         <div className="mb-16 section-reveal stagger-item">
-          <div className="bg-burnout-black border border-burnout-gray-700 rounded-2xl shadow-lg p-8 md:p-12 card-3d hover:border-burnout-yellow transition-all">
+          <div className="bg-burnout-black border border-burnout-gray-700 rounded-2xl shadow-lg p-8 md:p-12 hover:border-burnout-yellow hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 pricing-card">
             <h3 className="text-2xl font-oswald font-bold text-burnout-yellow mb-6 text-center">TARIFF PERSONAL TRAINING</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full text-burnout-white text-center border-separate border-spacing-y-2">
@@ -180,7 +180,7 @@ const PricingSection = () => {
 
         {/* Tariff Plan Yoga */}
         <div className="mb-16 section-reveal stagger-item">
-          <div className="bg-burnout-black border border-burnout-gray-700 rounded-2xl shadow-lg p-8 md:p-12 card-3d hover:border-burnout-yellow transition-all">
+          <div className="bg-burnout-black border border-burnout-gray-700 rounded-2xl shadow-lg p-8 md:p-12 hover:border-burnout-yellow hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 pricing-card">
             <h3 className="text-2xl font-oswald font-bold text-burnout-yellow mb-6 text-center">TARIFF PLAN YOGA</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full text-burnout-white text-center border-separate border-spacing-y-2">
@@ -222,7 +222,7 @@ const PricingSection = () => {
 
         {/* Tariff Plan Zumba */}
         <div className="mb-16 section-reveal stagger-item">
-          <div className="bg-burnout-black border border-burnout-gray-700 rounded-2xl shadow-lg p-8 md:p-12 card-3d hover:border-burnout-yellow transition-all">
+          <div className="bg-burnout-black border border-burnout-gray-700 rounded-2xl shadow-lg p-8 md:p-12 hover:border-burnout-yellow hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 pricing-card">
             <h3 className="text-2xl font-oswald font-bold text-burnout-yellow mb-6 text-center">TARIFF PLAN ZUMBA</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full text-burnout-white text-center border-separate border-spacing-y-2">

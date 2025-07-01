@@ -62,24 +62,21 @@ const AboutSection = () => {
 
             {/* Statistics */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-12 text-center">
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-center h-full bg-burnout-gray-900 rounded-xl p-6 shadow-md">
                 <div className="text-4xl md:text-5xl font-montserrat font-extrabold text-burnout-yellow mb-1 leading-none">15+</div>
                 <div className="text-lg md:text-xl font-oswald font-bold text-burnout-gray-200 tracking-wide leading-tight">BRANCHES</div>
               </div>
-              <div className="flex flex-col items-center justify-center">
-                <div className="text-lg md:text-xl font-oswald font-bold tracking-wide leading-tight">
-                  <span className="text-burnout-yellow">Imported</span> Equipments
-                </div>
+              <div className="flex flex-col items-center justify-center h-full bg-burnout-gray-900 rounded-xl p-6 shadow-md">
+                <span className="text-burnout-yellow text-2xl mb-1">🏋️‍♂️</span>
+                <div className="text-lg md:text-xl font-oswald font-bold text-burnout-gray-200 tracking-wide leading-tight">Imported Equipments</div>
               </div>
-              <div className="flex flex-col items-center justify-center">
-                <div className="text-lg md:text-xl font-oswald font-bold tracking-wide leading-tight">
-                  <span className="text-burnout-yellow">Natural</span> Transformation only
-                </div>
+              <div className="flex flex-col items-center justify-center h-full bg-burnout-gray-900 rounded-xl p-6 shadow-md">
+                <span className="text-burnout-yellow text-2xl mb-1">💪</span>
+                <div className="text-lg md:text-xl font-oswald font-bold text-burnout-gray-200 tracking-wide leading-tight">Natural Transformation Only</div>
               </div>
-              <div className="flex flex-col items-center justify-center">
-                <div className="text-lg md:text-xl font-oswald font-bold tracking-wide leading-tight">
-                  Distribution of <span className="text-burnout-yellow">MBH</span> gym equipments in India
-                </div>
+              <div className="flex flex-col items-center justify-center h-full bg-burnout-gray-900 rounded-xl p-6 shadow-md">
+                <span className="text-burnout-yellow text-2xl mb-1">🚚</span>
+                <div className="text-lg md:text-xl font-oswald font-bold text-burnout-gray-200 tracking-wide leading-tight">Distribution of <span className="text-burnout-yellow">MBH</span> gym equipments in India</div>
               </div>
             </div>
           </div>

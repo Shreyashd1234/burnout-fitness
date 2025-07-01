@@ -64,6 +64,8 @@ Thank you!`;
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="section-reveal space-y-8">
+            {/* Section Label */}
+            <span className="inline-block bg-burnout-yellow text-burnout-black font-oswald font-extrabold px-8 py-3 rounded-full text-2xl shadow-lg tracking-widest uppercase mb-4 border-4 border-burnout-yellow/60">Franchise</span>
             <h2 className="text-4xl md:text-6xl font-montserrat font-black text-burnout-white leading-tight">
               JOIN THE <span className="text-gradient">BURNOUT</span> FAMILY
             </h2>
