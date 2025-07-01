@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import burnoutMap from '../assets/burnout map.png';
 
 const FranchiseSection = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -161,30 +162,8 @@ Thank you!`;
           </div>
 
           {/* 3D Map with Pins */}
-          <div ref={mapRef} className="section-reveal">
-            <div className="placeholder-3d w-full h-96 relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 rounded-lg"></div>
-              
-              {/* Animated Map Pins */}
-              {[...Array(8)].map((_, i) => (
-                <div
-                  key={i}
-                  className="absolute w-4 h-4 bg-burnout-yellow rounded-full animate-float"
-                  style={{
-                    left: `${20 + Math.random() * 60}%`,
-                    top: `${20 + Math.random() * 60}%`,
-                    animationDelay: `${i * 0.3}s`
-                  }}
-                >
-                  <div className="w-2 h-2 bg-burnout-black rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-                </div>
-              ))}
-              
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <div className="text-burnout-yellow text-sm font-oswald opacity-70">3D FRANCHISE MAP</div>
-                <div className="text-burnout-yellow text-xs font-source opacity-50 mt-2">WITH LOCATION PINS</div>
-              </div>
-            </div>
+          <div ref={mapRef} className="section-reveal flex justify-center items-center">
+            <img src={burnoutMap} alt="Burnout Franchise Map" className="w-full h-96 object-contain rounded-lg border-2 border-burnout-yellow" />
           </div>
         </div>
       </div>
