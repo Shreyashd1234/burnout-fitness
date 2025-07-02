@@ -177,11 +177,6 @@ const BranchesSection = () => {
                   <span className="text-burnout-yellow text-sm">📍</span>
                   <span>{branch.address}</span>
                 </div>
-                
-                <div className="flex items-center space-x-3">
-                  <span className="text-burnout-yellow text-sm">📞</span>
-                  <span>{branch.phone}</span>
-                </div>
               </div>
 
               {/* CTA Button */}

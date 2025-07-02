@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
 
   const openWhatsApp = () => {
     const message = encodeURIComponent("Hi! I'm interested in learning more about Burnout Fitness Studio membership options.");
-    window.open(`https://wa.me/15558876688?text=${message}`, '_blank');
+    window.open(`https://wa.me/918260765803?text=${message}`, '_blank');
   };
 
   return (

@@ -11,7 +11,7 @@ function DumbbellModel() {
 
 const HeroSection = () => {
   const handleBookTrial = () => {
-    window.open('https://wa.me/918431157922', '_blank');
+    window.open('https://wa.me/918260765803', '_blank');
   };
 
   const handleExploreMemberships = () => {

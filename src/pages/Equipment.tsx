@@ -1,11 +1,21 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import oneImg from '../assets/1.png';
+import twoImg from '../assets/2.png';
+import threeImg from '../assets/3.png';
+import fourImg from '../assets/4.png';
+import certificateImg from '../assets/certificate.png';
+import equipmentsLogo from '../assets/equipments logo.png';
 
 const Equipments = () => {
   const handleDownloadBrochure = () => {
-    // Replace with actual brochure URL when available
-    window.open('/brochure.pdf', '_blank');
+    const link = document.createElement('a');
+    link.href = '/src/assets/BURNOUT FITNESS EQUIPMENTS.pdf';
+    link.download = 'BURNOUT FITNESS EQUIPMENTS.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -33,7 +43,7 @@ const Equipments = () => {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 flex items-center justify-center">
-                    <p className="text-burnout-gray-400">Brand Image Placeholder</p>
+                    <img src={equipmentsLogo} alt="Equipments Logo" className="object-contain w-full h-full" />
                   </div>
                 </div>
               </div>
@@ -46,10 +56,8 @@ const Equipments = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Commercial Treadmills */}
               <div className="bg-burnout-gray-900 p-6 rounded-xl border border-burnout-gray-700">
-                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 flex items-center justify-center">
-                    <p className="text-burnout-gray-400">Treadmill Image</p>
-                  </div>
+                <div className="relative h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-white">
+                  <img src={oneImg} alt="Commercial Treadmills" className="object-contain w-full h-full" />
                 </div>
                 <h3 className="text-2xl font-oswald font-semibold text-burnout-yellow mb-4">Commercial Treadmills (BOTR Series)</h3>
                 <ul className="space-y-2 text-burnout-gray-300">
@@ -61,10 +69,8 @@ const Equipments = () => {
 
               {/* Cross Trainers */}
               <div className="bg-burnout-gray-900 p-6 rounded-xl border border-burnout-gray-700">
-                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 flex items-center justify-center">
-                    <p className="text-burnout-gray-400">Cross Trainer Image</p>
-                  </div>
+                <div className="relative h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-white">
+                  <img src={twoImg} alt="Cross Trainers" className="object-contain w-full h-full" />
                 </div>
                 <h3 className="text-2xl font-oswald font-semibold text-burnout-yellow mb-4">Cross Trainers (BO CT Series)</h3>
                 <ul className="space-y-2 text-burnout-gray-300">
@@ -82,10 +88,8 @@ const Equipments = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Free Weight Machines */}
               <div className="bg-burnout-gray-900 p-6 rounded-xl border border-burnout-gray-700">
-                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 flex items-center justify-center">
-                    <p className="text-burnout-gray-400">Weight Machine Image</p>
-                  </div>
+                <div className="relative h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-white">
+                  <img src={threeImg} alt="Free Weight Machines" className="object-contain w-full h-full" />
                 </div>
                 <h3 className="text-2xl font-oswald font-semibold text-burnout-yellow mb-4">Free Weight Machines (Y900 Series)</h3>
                 <ul className="space-y-2 text-burnout-gray-300">
@@ -99,10 +103,8 @@ const Equipments = () => {
 
               {/* Series Machines */}
               <div className="bg-burnout-gray-900 p-6 rounded-xl border border-burnout-gray-700">
-                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 flex items-center justify-center">
-                    <p className="text-burnout-gray-400">Series Machine Image</p>
-                  </div>
+                <div className="relative h-48 mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-white">
+                  <img src={fourImg} alt="Series Machines" className="object-contain w-full h-full" />
                 </div>
                 <h3 className="text-2xl font-oswald font-semibold text-burnout-yellow mb-4">3000, 4000, 5000, 7000 Series</h3>
                 <ul className="space-y-2 text-burnout-gray-300">
@@ -119,7 +121,7 @@ const Equipments = () => {
           {/* Certification Section */}
           <div className="mb-16">
             <h2 className="text-3xl font-oswald font-semibold text-burnout-yellow mb-6">CERTIFICATIONS & AUTHORIZATIONS</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="bg-burnout-gray-900 p-8 rounded-xl border border-burnout-gray-700">
                 <h3 className="text-2xl font-oswald font-semibold text-burnout-yellow mb-6">Current Certifications</h3>
                 <ul className="space-y-4 text-burnout-gray-300">
@@ -143,14 +145,9 @@ const Equipments = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-burnout-gray-900 p-8 rounded-xl border border-burnout-gray-700">
-                <div className="relative h-full min-h-[300px] rounded-lg overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-burnout-yellow/20 to-yellow-600/20 flex items-center justify-center">
-                    <p className="text-burnout-gray-400 text-center">
-                      Authorization Certificate<br />
-                      Coming Soon
-                    </p>
-                  </div>
+              <div className="flex items-center justify-center">
+                <div className="bg-white p-2 rounded-xl">
+                  <img src={certificateImg} alt="Certificate" className="object-contain rounded-lg max-w-2xl w-full h-72 aspect-[16/9]" />
                 </div>
               </div>
             </div>
@@ -172,19 +169,7 @@ const Equipments = () => {
                     <svg className="w-6 h-6 text-burnout-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span>7987165291</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <svg className="w-6 h-6 text-burnout-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span>8880439039</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <svg className="w-6 h-6 text-burnout-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span>9353321102</span>
+                    <span>8260765803</span>
                   </li>
                 </ul>
               </div>

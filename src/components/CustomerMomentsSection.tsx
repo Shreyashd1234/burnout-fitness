@@ -1,27 +1,21 @@
 import React, { useEffect, useRef } from 'react';
+import moment1 from '../assets/1moment.png';
+import moment2 from '../assets/2moment.png';
+import moment3 from '../assets/3moment.png';
+import moment4 from '../assets/4moment.png';
+import moment5 from '../assets/5moment.png';
+import moment6 from '../assets/6moment.png';
 
 const CustomerMomentsSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const moments = [
-    {
-      image: 'photo-1526374965328-7f61d4dc18c5',
-    },
-    {
-      image: 'photo-1500673922987-e212871fec22',
-    },
-    {
-      image: 'photo-1501854140801-50d01698950b',
-    },
-    {
-      image: 'photo-1465146344425-f00d5f5c8f07',
-    },
-    {
-      image: 'photo-1582562124811-c09040d0a901',
-    },
-    {
-      image: 'photo-1526374965328-7f61d4dc18c5',
-    }
+    { image: moment1 },
+    { image: moment2 },
+    { image: moment3 },
+    { image: moment4 },
+    { image: moment5 },
+    { image: moment6 },
   ];
 
   useEffect(() => {
@@ -46,7 +40,7 @@ const CustomerMomentsSection = () => {
 
   const openWhatsApp = () => {
     const message = encodeURIComponent("Hi! I'm ready to start my fitness journey with Burnout Fitness Studio. Can you help me get started?");
-    window.open(`https://wa.me/15558876688?text=${message}`, '_blank');
+    window.open(`https://wa.me/918260765803?text=${message}`, '_blank');
   };
 
   return (
@@ -74,7 +68,7 @@ const CustomerMomentsSection = () => {
                 <div className="bg-burnout-gray-800 p-4 rounded-lg border-2 border-burnout-yellow/30 hover:border-burnout-yellow transition-all duration-300 transform hover:rotateX-2 hover:rotateY-2">
                   {/* Image Container */}
                   <div className="aspect-square overflow-hidden rounded-lg bg-white flex items-center justify-center">
-                    <span className="text-burnout-black text-lg font-oswald">Moments images</span>
+                    <img src={moment.image} alt={`Customer moment ${index + 1}`} className="object-cover w-full h-full" />
                   </div>
 
                   {/* 3D Frame Effect */}
