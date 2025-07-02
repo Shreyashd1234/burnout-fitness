@@ -41,17 +41,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://facebook.com/burnoutfitness" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-burnout-gray-800 rounded-lg flex items-center justify-center text-burnout-yellow hover:bg-burnout-yellow hover:text-burnout-black transition-all"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-              </a>
-              <a 
-                href="https://instagram.com/burnoutfitness" 
+                href="https://www.instagram.com/burnoutfitnessgymchainexpress/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-burnout-gray-800 rounded-lg flex items-center justify-center text-burnout-yellow hover:bg-burnout-yellow hover:text-burnout-black transition-all"
@@ -79,7 +69,7 @@ const Footer = () => {
             <ul className="space-y-3 text-burnout-gray-300 font-source">
               <li>8260765803</li>
               <li>burnoutfitnesspvtltd@gmail.com</li>
-              <li>2nd floor<br />AGM tower<br />Sai Baba temple road<br />Munnekolala<br />Bangalore<br />Karnataka</li>
+              <li>2nd floor, AGM tower, Sai Baba temple road, Munnekolala, Bangalore, Karnataka</li>
             </ul>
           </div>
         </div>

@@ -84,12 +84,7 @@ Please get back to me soon. Thank you!`;
               <div>
                 <h3 className="font-oswald font-semibold text-burnout-white text-lg">VISIT US</h3>
                 <p className="text-burnout-gray-300 font-source">
-                  2nd floor<br />
-                  AGM tower<br />
-                  Sai Baba temple road<br />
-                  Munnekolala<br />
-                  Bangalore<br />
-                  Karnataka
+                  2nd floor, AGM tower, Sai Baba temple road, Munnekolala, Bangalore, Karnataka
                 </p>
               </div>
             </div>

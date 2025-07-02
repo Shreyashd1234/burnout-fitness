@@ -1,4 +1,16 @@
 import React, { useEffect, useRef } from 'react';
+import BEML_LAYOUT from '../assets/BEML LAYOUT.jpg';
+import DODDA_KANNELI from '../assets/DODDA KANNELI.jpg';
+import AECS_LAYOUT from '../assets/AECS LAYOUT.jpg';
+import ELECTRONIC_CITY from '../assets/ELECTRONIC CITY.jpg';
+import KANPUR from '../assets/KANPUR.jpg';
+import NITROGEN_FITNESS from '../assets/NITROGEN FITNESS .jpg';
+import SAI_BABA_TEMPLE_ROAD from '../assets/SAI BABA TEMPLE ROAD.jpg';
+import MARATHALI from '../assets/MARATHALI.jpg';
+import KASVANAHALLI from '../assets/KASVANAHALLI.jpg';
+import KADUGODI from '../assets/KADUGODI.jpg';
+import PAI_LAYOUT from '../assets/PAI LAYOUT.jpg';
+import BELGAUM from '../assets/BELGAUM.jpg';
 
 const BranchesSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -25,64 +37,88 @@ const BranchesSection = () => {
 
   const branches = [
     {
-      name: 'Munnekolala',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'BEML LAYOUT',
+      image: BEML_LAYOUT,
+      address: 'BEML Layout, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/Woqgeqe'
     },
     {
-      name: 'AECS Layout',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'DODDA KANNELI',
+      image: DODDA_KANNELI,
+      address: 'Dodda Kannelli, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/JFMmJUQ'
     },
     {
-      name: 'BEML',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'AECS LAYOUT',
+      image: AECS_LAYOUT,
+      address: 'AECS Layout, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/7GVQWmY'
     },
     {
-      name: 'Marathahalli Bridge',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'ELECTRONIC CITY',
+      image: ELECTRONIC_CITY,
+      address: 'Electronic City, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/T35mVff'
     },
     {
-      name: 'Nitrogen SGR Dental College Road',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'KANPUR',
+      image: KANPUR,
+      address: 'Kanpur, Uttar Pradesh',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/efBGYX7'
     },
     {
-      name: 'Doddakannelli',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'NITROGEN FITNESS SGR DENTAL COLLEGE ROAD',
+      image: NITROGEN_FITNESS,
+      address: 'SGR Dental College Road, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/4BAJvjc'
     },
     {
-      name: 'Kadugodi',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'BURNOUT FITNESS SAI BABA TEMPLE ROAD',
+      image: SAI_BABA_TEMPLE_ROAD,
+      address: 'Sai Baba Temple Road, Munnekolala, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/SMWqKRa'
     },
     {
-      name: 'Pai Layout',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'BURNOUT FITNESS MARATHAHALLI',
+      image: MARATHALI,
+      address: 'Marathahalli, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/moudDEu'
     },
     {
-      name: 'Electronic City',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'BURNOUT FITNESS KASVANAHALLI',
+      image: KASVANAHALLI,
+      address: 'Kasvanahalli, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/2Ze2awz'
     },
     {
-      name: 'Belgaum',
-      address: 'Branch address here',
-      phone: 'Phone number here',
-      hours: 'Hours here'
+      name: 'BURNOUT FITNESS KADUGODI',
+      image: KADUGODI,
+      address: 'Kadugodi, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/R3pTpGu'
+    },
+    {
+      name: 'BURNOUT FITNESS PAI LAYOUT',
+      image: PAI_LAYOUT,
+      address: 'Pai Layout, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/Jb1xwnk'
+    },
+    {
+      name: 'BURNOUT FITNESS BELGAUM',
+      image: BELGAUM,
+      address: 'Burnout Fitness, Belgaum, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/XZEeQ3m'
     }
   ];
 
@@ -127,8 +163,8 @@ const BranchesSection = () => {
               className="branch-card stagger-item card-3d bg-burnout-black border border-burnout-gray-700 rounded-xl p-6 hover:border-burnout-yellow transition-all duration-300 group"
             >
               {/* Branch Image Placeholder */}
-              <div className="w-full h-48 mb-6 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-burnout-black text-sm font-oswald">BRANCH IMAGE</span>
+              <div className="w-full h-48 mb-6 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+                <img src={branch.image} alt={branch.name} className="object-cover w-full h-full" />
               </div>
 
               {/* Branch Info */}
@@ -146,18 +182,15 @@ const BranchesSection = () => {
                   <span className="text-burnout-yellow text-sm">📞</span>
                   <span>{branch.phone}</span>
                 </div>
-                
-                <div className="flex items-start space-x-3">
-                  <span className="text-burnout-yellow text-sm">🕒</span>
-                  <span className="text-sm">{branch.hours}</span>
-                </div>
               </div>
 
               {/* CTA Button */}
               <div className="mt-6">
-                <button className="w-full bg-burnout-yellow text-burnout-black font-oswald font-semibold py-3 rounded-lg hover:bg-yellow-400 transition-colors">
-                  GET LOCATION
-                </button>
+                <a href={branch.map} target="_blank" rel="noopener noreferrer" className="w-full inline-block">
+                  <button className="w-full bg-burnout-yellow text-burnout-black font-oswald font-semibold py-3 rounded-lg hover:bg-yellow-400 transition-colors">
+                    GET LOCATION
+                  </button>
+                </a>
               </div>
             </div>
           ))}

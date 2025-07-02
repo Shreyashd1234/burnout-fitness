@@ -62,13 +62,7 @@ const ContactSection = () => {
               <div><span className="font-bold text-burnout-yellow">Contact number:</span> 8260765803</div>
               <div><span className="font-bold text-burnout-yellow">Email:</span> burnoutfitnesspvtltd@gmail.com</div>
               <div>
-                <span className="font-bold text-burnout-yellow">Address:</span><br/>
-                2nd floor<br/>
-                AGM tower<br/>
-                Sai Baba temple road<br/>
-                Munnekolala<br/>
-                Bangalore<br/>
-                Karnataka
+                <span className="font-bold text-burnout-yellow">Address:</span> 2nd floor, AGM tower, Sai Baba temple road, Munnekolala, Bangalore, Karnataka
               </div>
             </div>
           </div>
