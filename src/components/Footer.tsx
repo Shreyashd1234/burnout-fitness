@@ -77,9 +77,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-oswald font-semibold text-burnout-white mb-4">CONTACT</h4>
             <ul className="space-y-3 text-burnout-gray-300 font-source">
-              <li>(555) BURNOUT</li>
-              <li>info@burnoutfitness.com</li>
-              <li>123 Fitness Boulevard<br />Muscle City, MC 12345</li>
+              <li>8260765803</li>
+              <li>burnoutfitnesspvtltd@gmail.com</li>
+              <li>2nd floor<br />AGM tower<br />Sai Baba temple road<br />Munnekolala<br />Bangalore<br />Karnataka</li>
             </ul>
           </div>
         </div>

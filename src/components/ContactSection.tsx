@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const ContactSection = () => {
@@ -56,6 +55,20 @@ const ContactSection = () => {
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                   <div className="text-burnout-yellow text-xs font-oswald opacity-70">✈️</div>
                 </div>
+              </div>
+            </div>
+            {/* Contact Details */}
+            <div className="mt-32 space-y-4 text-burnout-gray-200 font-source text-lg max-w-xl mx-auto bg-burnout-gray-900 rounded-xl p-8 border border-burnout-yellow/30 shadow-lg">
+              <div><span className="font-bold text-burnout-yellow">Contact number:</span> 8260765803</div>
+              <div><span className="font-bold text-burnout-yellow">Email:</span> burnoutfitnesspvtltd@gmail.com</div>
+              <div>
+                <span className="font-bold text-burnout-yellow">Address:</span><br/>
+                2nd floor<br/>
+                AGM tower<br/>
+                Sai Baba temple road<br/>
+                Munnekolala<br/>
+                Bangalore<br/>
+                Karnataka
               </div>
             </div>
           </div>

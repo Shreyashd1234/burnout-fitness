@@ -67,7 +67,7 @@ const PricingSection = () => {
 
   const openWhatsApp = (planName: string) => {
     const message = encodeURIComponent(`Hi! I'm interested in the ${planName} membership plan. Can you provide more details?`);
-    window.open(`https://wa.me/918431157922?text=${message}`, '_blank');
+    window.open(`https://wa.me/918260765803?text=${message}`, '_blank');
   };
 
   return (

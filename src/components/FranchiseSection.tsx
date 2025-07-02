@@ -49,7 +49,7 @@ Please provide me with detailed franchise information including investment requi
 
 Thank you!`;
 
-    const phoneNumber = '918431157922';
+    const phoneNumber = '918260765803';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };

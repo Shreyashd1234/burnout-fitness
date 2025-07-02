@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
@@ -23,7 +22,7 @@ Message: ${formData.message}
 
 Please get back to me soon. Thank you!`;
 
-    const phoneNumber = '918431157922';
+    const phoneNumber = '918260765803';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -64,7 +63,7 @@ Please get back to me soon. Thank you!`;
               </div>
               <div>
                 <h3 className="font-oswald font-semibold text-burnout-white text-lg">CALL US</h3>
-                <p className="text-burnout-gray-300 font-source">8431157922</p>
+                <p className="text-burnout-gray-300 font-source">8260765803</p>
               </div>
             </div>
 
@@ -74,7 +73,7 @@ Please get back to me soon. Thank you!`;
               </div>
               <div>
                 <h3 className="font-oswald font-semibold text-burnout-white text-lg">EMAIL US</h3>
-                <p className="text-burnout-gray-300 font-source">desaishreyash506@gmail.com</p>
+                <p className="text-burnout-gray-300 font-source">burnoutfitnesspvtltd@gmail.com</p>
               </div>
             </div>
 
@@ -85,8 +84,12 @@ Please get back to me soon. Thank you!`;
               <div>
                 <h3 className="font-oswald font-semibold text-burnout-white text-lg">VISIT US</h3>
                 <p className="text-burnout-gray-300 font-source">
-                  123 Fitness Boulevard<br />
-                  Muscle City, MC 12345
+                  2nd floor<br />
+                  AGM tower<br />
+                  Sai Baba temple road<br />
+                  Munnekolala<br />
+                  Bangalore<br />
+                  Karnataka
                 </p>
               </div>
             </div>
