@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="border-t border-burnout-gray-800 mt-12 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-burnout-gray-400 font-source text-sm">
-              © 2025 Burnout Fitness Studio. All rights reserved. Developed by Next Media Co
+              © 2025 Burnout Fitness Studio. All rights reserved. Developed by Nextverse
             </p>
             <div className="flex space-x-6 text-burnout-gray-400 font-source text-sm">
               <a href="/privacy-policy" className="hover:text-burnout-yellow transition-colors">Privacy Policy</a>

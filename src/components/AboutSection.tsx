@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from 'react';
+import trainerImage from '../assets/trainer image.png';
+import promoImage from '../assets/promo.jpg';
 
 const AboutSection = () => {
   const trainerRef = useRef<HTMLDivElement>(null);
@@ -81,10 +83,14 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Image Placeholder */}
-          <div ref={trainerRef} className="section-reveal flex justify-center lg:justify-end">
-            <div className="w-80 h-96 bg-white rounded-lg flex items-center justify-center border-2 border-burnout-yellow transform hover:scale-105 transition-transform duration-300">
-              <span className="text-burnout-black text-sm font-oswald">TRAINER IMAGE</span>
+          {/* Trainer Image */}
+          <div ref={trainerRef} className="section-reveal flex justify-center lg:justify-end items-start mt-[-2rem]">
+            <div className="w-[28rem] h-[32rem] rounded-lg overflow-hidden border-2 border-burnout-yellow transform hover:scale-105 transition-transform duration-300">
+              <img 
+                src={trainerImage} 
+                alt="Burnout Fitness Trainer" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -96,13 +102,17 @@ const AboutSection = () => {
               EXPERIENCE <span className="text-gradient">BURNOUT</span>
             </h3>
             <p className="text-lg text-burnout-gray-300 font-oswald">
-              Watch our gym introduction video
+              Experience the beginning of your lifestyle transformation.
             </p>
           </div>
           
-          {/* Video Placeholder */}
-          <div className="w-full h-64 md:h-96 bg-white rounded-lg flex items-center justify-center border-2 border-burnout-yellow">
-            <span className="text-burnout-black text-lg font-oswald">PROMOTIONAL VIDEO</span>
+          {/* Promotional Image */}
+          <div className="w-full h-64 md:h-96 rounded-lg overflow-hidden border-2 border-burnout-yellow">
+            <img 
+              src={promoImage} 
+              alt="Burnout Fitness Promotional Video" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

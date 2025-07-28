@@ -105,7 +105,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   : 'text-burnout-white hover:bg-burnout-gray-900'
               }`}
             >
-              {link.label}
+              {link.label.toUpperCase()}
             </button>
           ))}
         </div>

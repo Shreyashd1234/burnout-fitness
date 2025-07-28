@@ -110,7 +110,7 @@ const Navbar = () => {
                           : 'text-burnout-white hover:text-burnout-yellow'
                     }`}
                   >
-                    {link.label}
+                    {link.label.toUpperCase()}
                   </button>
                 ))}
               </div>
