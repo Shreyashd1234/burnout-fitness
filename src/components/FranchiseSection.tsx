@@ -101,7 +101,7 @@ Thank you!`;
               <div className="col-span-2 flex flex-col space-y-2 mt-2">
                 <div className="text-burnout-yellow font-oswald font-semibold">SUPPORT</div>
                 <ul className="text-burnout-gray-300 font-source list-disc list-inside space-y-1">
-                  <li>Imports Equipment</li>
+                  <li>Imported Equipment</li>
                   <li>Software Support</li>
                   <li>Trainers Support</li>
                   <li>Full Guide (How to run Gym)</li>

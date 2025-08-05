@@ -63,7 +63,7 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl font-oswald text-burnout-gray-300 mb-8 max-w-3xl mx-auto">
-          #BURN FAT AT BURNOUT
+          #BURNFAT AT BURNOUT
         </p>
 
         {/* CTA Buttons */}

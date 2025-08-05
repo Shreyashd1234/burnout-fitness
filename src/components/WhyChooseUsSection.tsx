@@ -6,7 +6,7 @@ const features = [
   'Free gym kit with every membership',
   'Access to 15+ branches across India — switch anytime, anywhere',
   'Membership pause option available for up to 60 days',
-  'Exclusive Pilates machine – not available at other gyms',
+  'Exclusive Pilates Section',
   'Dedicated space for group classes like Zumba and Yoga',
   'Separate CrossFit training zone',
   'Spacious 8000 sq. ft. gym facility',
