@@ -17,7 +17,8 @@ const Navbar = () => {
     { id: 'franchise', label: 'Get a Franchise' },
     { id: 'branches', label: 'Our Branches' },
     { id: 'contact', label: 'Contact Us' },
-    { id: 'equipments', label: 'Our Equipments', isExternal: true, isSpecial: true }
+    { id: 'equipments', label: 'Our Equipments', isExternal: true, isSpecial: true },
+    { id: 'gallery', label: 'Gallery', isExternal: true, isSpecial: true }
   ];
 
   const toggleSidebar = () => {

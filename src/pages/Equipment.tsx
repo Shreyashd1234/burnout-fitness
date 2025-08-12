@@ -6,6 +6,7 @@ import twoImg from '../assets/2.png';
 import threeImg from '../assets/3.png';
 import fourImg from '../assets/4.png';
 import certificateImg from '../assets/certificate.png';
+import certificate2 from '../assets/certificate2.jpg';
 import equipmentsLogo from '../assets/equipments logo.png';
 
 const Equipments = () => {
@@ -121,33 +122,61 @@ const Equipments = () => {
           {/* Certification Section */}
           <div className="mb-16">
             <h2 className="text-3xl font-oswald font-semibold text-burnout-yellow mb-6">CERTIFICATIONS & AUTHORIZATIONS</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="bg-burnout-gray-900 p-8 rounded-xl border border-burnout-gray-700">
-                <h3 className="text-2xl font-oswald font-semibold text-burnout-yellow mb-6">Current Certifications</h3>
-                <ul className="space-y-4 text-burnout-gray-300">
-                  <li className="flex items-center space-x-3">
-                    <svg className="w-6 h-6 text-burnout-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>ISO 9001:2015 Certified</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <svg className="w-6 h-6 text-burnout-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Safety Standards Compliance</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <svg className="w-6 h-6 text-burnout-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Equipment Manufacturer Certifications</span>
-                  </li>
-                </ul>
+            
+            {/* Certificates Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+              {/* First Certificate */}
+              <div className="bg-burnout-gray-900 p-6 rounded-xl border border-burnout-gray-700 hover:border-burnout-yellow transition-colors duration-300">
+                <h3 className="text-xl font-oswald font-semibold text-burnout-yellow mb-4 text-center">Authorization Certificate</h3>
+                <div className="bg-white p-3 rounded-lg shadow-lg">
+                  <img 
+                    src={certificateImg} 
+                    alt="Authorization Certificate" 
+                    className="w-full h-auto object-contain rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer" 
+                  />
+                </div>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="bg-white p-2 rounded-xl">
-                  <img src={certificateImg} alt="Certificate" className="object-contain rounded-lg max-w-2xl w-full h-72 aspect-[16/9]" />
+
+              {/* Second Certificate */}
+              <div className="bg-burnout-gray-900 p-6 rounded-xl border border-burnout-gray-700 hover:border-burnout-yellow transition-colors duration-300">
+                <h3 className="text-xl font-oswald font-semibold text-burnout-yellow mb-4 text-center">Distribution Authorization</h3>
+                <div className="bg-white p-3 rounded-lg shadow-lg">
+                  <img 
+                    src={certificate2} 
+                    alt="Distribution Authorization Certificate" 
+                    className="w-full h-auto object-contain rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer" 
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Certifications List */}
+            <div className="bg-burnout-gray-900 p-8 rounded-xl border border-burnout-gray-700">
+              <h3 className="text-2xl font-oswald font-semibold text-burnout-yellow mb-6 text-center">Current Certifications & Standards</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex items-center space-x-3 p-4 bg-burnout-gray-800 rounded-lg">
+                  <div className="flex-shrink-0 w-8 h-8 bg-burnout-yellow rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-burnout-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-burnout-gray-300 font-medium">ISO 9001:2015 Certified</span>
+                </div>
+                <div className="flex items-center space-x-3 p-4 bg-burnout-gray-800 rounded-lg">
+                  <div className="flex-shrink-0 w-8 h-8 bg-burnout-yellow rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-burnout-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-burnout-gray-300 font-medium">Safety Standards Compliance</span>
+                </div>
+                <div className="flex items-center space-x-3 p-4 bg-burnout-gray-800 rounded-lg">
+                  <div className="flex-shrink-0 w-8 h-8 bg-burnout-yellow rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-burnout-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-burnout-gray-300 font-medium">Equipment Manufacturer Certifications</span>
                 </div>
               </div>
             </div>
