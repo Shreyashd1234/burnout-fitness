@@ -46,35 +46,35 @@ const BranchesSection = () => {
     {
       name: 'DODDA KANNELI',
       image: DODDA_KANNELI,
-      address: 'Dodda Kannelli, Bangalore, Karnataka',
+      address: 'AECS Layout, Dodda Kanneli, Bangalore, Karnataka',
       phone: '8260765803',
       map: 'https://g.co/kgs/JFMmJUQ'
     },
     {
       name: 'AECS LAYOUT',
       image: AECS_LAYOUT,
-      address: 'AECS Layout, Bangalore, Karnataka',
+      address: 'AECS Layout, Dodda Kanneli, Bangalore, Karnataka',
       phone: '8260765803',
       map: 'https://g.co/kgs/7GVQWmY'
     },
     {
       name: 'ELECTRONIC CITY',
       image: ELECTRONIC_CITY,
-      address: 'Electronic City, Bangalore, Karnataka',
+      address: 'Electronic City, Kanpur, Uttar Pradesh',
       phone: '8260765803',
       map: 'https://g.co/kgs/T35mVff'
     },
     {
       name: 'KANPUR',
       image: KANPUR,
-      address: 'Kanpur, Uttar Pradesh',
+      address: 'SGR Dental College Road, Kanpur, Uttar Pradesh',
       phone: '8260765803',
       map: 'https://g.co/kgs/efBGYX7'
     },
     {
       name: 'NITROGEN FITNESS SGR DENTAL COLLEGE ROAD',
       image: NITROGEN_FITNESS,
-      address: 'SGR Dental College Road, Bangalore, Karnataka',
+      address: 'Electronic City, Nitrogen Fitness, Bangalore, Karnataka',
       phone: '8260765803',
       map: 'https://g.co/kgs/4BAJvjc'
     },
@@ -102,14 +102,14 @@ const BranchesSection = () => {
     {
       name: 'BURNOUT FITNESS KADUGODI',
       image: KADUGODI,
-      address: 'Kadugodi, Bangalore, Karnataka',
+      address: 'Kadugodi, Pai Layout, Bangalore, Karnataka',
       phone: '8260765803',
       map: 'https://g.co/kgs/R3pTpGu'
     },
     {
       name: 'BURNOUT FITNESS PAI LAYOUT',
       image: PAI_LAYOUT,
-      address: 'Pai Layout, Bangalore, Karnataka',
+      address: 'Kadugodi, Pai Layout, Bangalore, Karnataka',
       phone: '8260765803',
       map: 'https://g.co/kgs/Jb1xwnk'
     },

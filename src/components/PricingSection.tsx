@@ -260,7 +260,7 @@ const PricingSection = () => {
         {/* Branch Info */}
         <div className="text-center mt-10 section-reveal">
           <span className="text-burnout-yellow font-oswald font-semibold text-lg">
-            15+ Running Branches in India | Branches at Bengaluru, Belgaum, Kanpur, Odisha
+            15+ Running Branches in India | Branches at Bengaluru, Belgaum, Kanpur (SGR Dental), Electronic City, Nitrogen Fitness, Dodda Kanneli, Pai Layout
           </span>
         </div>
       </div>
