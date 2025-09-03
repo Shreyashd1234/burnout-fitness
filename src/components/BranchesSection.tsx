@@ -44,13 +44,6 @@ const BranchesSection = () => {
       map: 'https://g.co/kgs/Woqgeqe'
     },
     {
-      name: 'DODDA KANNELI',
-      image: DODDA_KANNELI,
-      address: 'AECS Layout, Dodda Kanneli, Bangalore, Karnataka',
-      phone: '8260765803',
-      map: 'https://g.co/kgs/JFMmJUQ'
-    },
-    {
       name: 'AECS LAYOUT',
       image: AECS_LAYOUT,
       address: 'AECS Layout, Dodda Kanneli, Bangalore, Karnataka',
@@ -58,9 +51,23 @@ const BranchesSection = () => {
       map: 'https://g.co/kgs/7GVQWmY'
     },
     {
+      name: 'DODDA KANNELI',
+      image: DODDA_KANNELI,
+      address: 'Dodda Kanneli, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/JFMmJUQ'
+    },
+    {
+      name: 'NITROGEN FITNESS SGR DENTAL COLLEGE ROAD',
+      image: NITROGEN_FITNESS,
+      address: 'Nitrogen Fitness, Bangalore, Karnataka',
+      phone: '8260765803',
+      map: 'https://g.co/kgs/4BAJvjc'
+    },
+    {
       name: 'ELECTRONIC CITY',
       image: ELECTRONIC_CITY,
-      address: 'Electronic City, Kanpur, Uttar Pradesh',
+      address: 'Electronic City, Bangalore, Karnataka',
       phone: '8260765803',
       map: 'https://g.co/kgs/T35mVff'
     },
@@ -70,13 +77,6 @@ const BranchesSection = () => {
       address: 'SGR Dental College Road, Kanpur, Uttar Pradesh',
       phone: '8260765803',
       map: 'https://g.co/kgs/efBGYX7'
-    },
-    {
-      name: 'NITROGEN FITNESS SGR DENTAL COLLEGE ROAD',
-      image: NITROGEN_FITNESS,
-      address: 'Electronic City, Nitrogen Fitness, Bangalore, Karnataka',
-      phone: '8260765803',
-      map: 'https://g.co/kgs/4BAJvjc'
     },
     {
       name: 'BURNOUT FITNESS SAI BABA TEMPLE ROAD',
